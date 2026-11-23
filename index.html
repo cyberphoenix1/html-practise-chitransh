@@ -41,8 +41,68 @@
         </ol>
     </section>
 
+    <section class="timetable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Subject</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>Programming for Problem Solving</td>
+                    <td>10 am</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Basic Electronics</td>
+                    <td>12 pm</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Classical Physics</td>
+                    <td>2 pm</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
     <section class="links" id="contact-section">
         <a href="https://www.github.com/cyberphoenix1" class="github-link">My github page</a>
+
+        <div class="contact-me">
+            <label for="username">Name: </label>
+            <input type="text" id="username" name="username" placeholder="Enter Your Name">
+
+            <label for="e-mail">Email: </label>
+            <input type="text" id="e-mail" name="e-mail" placeholder="Enter Your E-Mail">
+
+            <label for="reason">Your Reason to Contact: </label>
+            <select name="reason" id="reason">
+                <option value="" disabled selected>--Select a Reason--</option>
+                <option value="question">Question</option>
+                <option value="collaboration">Collaboration</option>
+                <option value="feedback">Feedback</option>
+                <option value="casual">Casual Talk</option>
+            </select>
+
+            <div class="reply">
+                <p>How should I reply back?</p>
+                <label for="formal">Formally</label>
+                <input type="radio" id="formal" name="formally" value="formally">   
+                <label for="informal">Informally</label>
+                <input type="radio" id="informal" name="informally" value="informally">
+            </div>
+
+            <form action="/submit-feedback" method="post">
+                <label for="remark">Your Message to Me:</label><br>
+                <textarea id="remark" name="remark" rows="5" cols="40" placeholder="Type the message you would like me to read..."></textarea><br>
+            </form>
+        </div>
     </section>
 </body>
 </html>
